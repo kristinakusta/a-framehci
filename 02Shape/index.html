@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,12 +13,39 @@
   <body>
     <a-scene background="color: #333333">
       <a-box id="myBox"
-        width="3"
+        width="2"
+        height="2"
+        depth="2"
+        color="#F9E345" 
+        shadow
+        position="0 2 -10"
+        rotation= "0 45 0"
+        scale= "2 2 2">
+      </a-box>
+      <a-sphere id="mySphere"
+        width="1"
         height="2"
         depth="1"
-        color="#BBAA33" 
-        shadow>
-      </a-box>
+        color="#900807" 
+        shadow
+        position="4 1 -7">
+      </a-sphere>
+      <a-cone id="myCone"
+        width="1"
+        height="3"
+        depth="1"
+        color="#2B7CD3" 
+        shadow
+        position="-3 4 -6">
+      </a-cone>
+      <a-text
+        value="Hello there! Now you see my figures."
+        align= "center"
+        color="#FFFFFF" 
+        opacity= "1.0"
+        position="-3 4 -6"
+        scale="2 2 1">
+      </a-text>
     </a-scene>
   </body>
 </html>
