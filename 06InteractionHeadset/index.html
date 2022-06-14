@@ -17,13 +17,13 @@
 
       <a-camera>
         <a-entity id="mouseCursor"
-          cursor="fuse: true; fuseTimeout: 1500">
+          cursor="fuse: true; fuseTimeout: 666">
         </a-entity>
         <a-ring id="cursorRing" 
           position="0 0 -1"
-          radius-inner= "0.02"
-          radius-outer= "0.03"
-          material="color: red; shader: flat">
+          radius-inner= "0.03"
+          radius-outer= "0.05"
+          material="color: white; shader: flat">
         </a-ring>
       </a-camera>
       
@@ -38,13 +38,13 @@
         animation__mouseenter="
           property: components.material.material.color; 
           type: color; 
-          to: blue; 
+          to: purple; 
           startEvents: mouseenter; 
           dur: 500;"
         animation__mouseleave="
           property: components.material.material.color; 
           type: color; 
-          to: red; 
+          to: yellow; 
           startEvents: mouseleave; 
           dur: 500;">  
       </a-box>
